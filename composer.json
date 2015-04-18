@@ -12,7 +12,7 @@
         "corneltek/curlkit": "*",
         "symfony/dom-crawler": "*"
     },
-    "license": "MIT",
+    "license": "GPL",
     "require-dev": {
         "corneltek/phpunit-testmore": "dev-master"
     },
