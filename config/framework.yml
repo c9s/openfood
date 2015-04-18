@@ -1,0 +1,42 @@
+---
+ApplicationName: OpenFood
+ApplicationID:   openfood
+ApplicationUUID: 0803e058-e5ae-11e4-8983-3c15c2cb5a5a
+Domain: openfood.dev
+Mail:
+  System: "\"System\" <no-reply@blah.com>"
+  Admin: "\"Admin\" <cornelius.howl@gmail.com>"
+Applications:
+  OpenFood:
+Services:
+  CurrentUserService:
+    Class: Phifty\Security\CurrentUser
+    Model: UserBundle\Model\User
+  ActionService:
+  RouterService:
+  LibraryService:
+  ViewService:
+    Backend: twig
+    TemplateDirs: []
+  MailerService:
+    Transport: MailTransport
+  CacheService: ~
+  LocaleService:
+    Directory: locale
+    Default: en
+    Domain: openfood
+    Langs:
+      - en
+  CacheService:
+  SessionService:
+  TwigService:
+    TemplateDirs: []
+  AssetService:
+    BaseUrl: /assets
+    BaseDir: webroot/assets
+    Dirs: []
+  BundleService:
+    Paths: []
+      # - bundles
+Bundles:
+  # CoreBundle:
