@@ -4,9 +4,9 @@
     "require": {
         "php": ">=5.4.0",
         "corneltek/phifty-core": "dev-master",
-        "corneltek/lazyrecord": "dev-master as 1.18.9",
-        "corneltek/oauth-provider": "~1",
-        "corneltek/oauth2": "~1",
+        "corneltek/lazyrecord": "dev-master as 2.99",
+        "corneltek/oauth-provider": "dev-master",
+        "corneltek/oauth2": "dev-master",
         "facebook/php-sdk-v4": "dev-master",
         "swiftmailer/swiftmailer": "@stable",
         "corneltek/curlkit": "*",
