@@ -5,6 +5,10 @@ Make sure there is a `cache` directory:
 
     mkdir -p cache
 
+Run composer to install the packages:
+
+    composer install --dev --prefer-source
+
 Modify config/database.yml for your environment.
 
     cp -v config/database.prod.yml config/database.yml
