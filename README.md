@@ -17,7 +17,7 @@ Now compile it to config/database.php file:
 
     php bin/lazy build-conf config/database.yml
 
-Build the static scheam files:
+Build the static schema files:
 
     php bin/lazy schema build -f
 
