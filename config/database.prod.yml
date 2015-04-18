@@ -1,0 +1,14 @@
+---
+bootstrap:
+- main.php
+schema:
+  auto_id: true
+  loader: vendor/corneltek/phifty-core/src/Phifty/SchemaLoader.php
+seeds: ~
+data_sources:
+  default:
+    database: openfood
+    driver: mysql
+    host: localhost
+    user: root
+    pass: qwer1234
