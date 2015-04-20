@@ -36,6 +36,10 @@ Build up database from schema:
 
     php bin/lazy sql --rebuild
 
+Or you can do it with `--debug` flag if you are interested in the SQL queries:
+
+    php bin/lazy --debug sql --rebuild
+
 Initialize asset files:
 
     php bin/phifty asset --link
