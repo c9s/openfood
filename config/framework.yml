@@ -38,5 +38,3 @@ Services:
   BundleService:
     Paths: []
       # - bundles
-Bundles:
-  # CoreBundle:
