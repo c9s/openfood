@@ -30,6 +30,7 @@ class CompanySchema extends SchemaDeclare
             ->varchar(20);
 
         $this->column('locale')
+            ->varchar(12)
             ->validValues([ 'en', 'zh_TW' ]);
 
     }

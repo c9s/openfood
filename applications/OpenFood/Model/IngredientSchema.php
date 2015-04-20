@@ -4,6 +4,10 @@ use LazyRecord\Schema\SchemaDeclare;
 
 class IngredientSchema extends SchemaDeclare
 {
-    function schema() {
+    public function schema() {
+
+        $this->column('name')->varchar(30);
+
+
     }
 }

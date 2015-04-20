@@ -12,9 +12,11 @@ class IngredientBase
     const write_source_id = 'default';
     const primary_key = 'id';
     public static $column_names = array (
-      0 => 'id',
+      0 => 'name',
+      1 => 'id',
     );
     public static $column_hash = array (
+      'name' => 1,
       'id' => 1,
     );
     public static $mixin_classes = array (
@@ -25,6 +27,12 @@ class IngredientBase
            return $this->_schema;
         }
         return $this->_schema = \LazyRecord\Schema\SchemaLoader::load('OpenFood\\Model\\IngredientSchemaProxy');
+    }
+    public function getName()
+    {
+        if (isset($this->_data['name'])) {
+            return $this->_data['name'];
+        }
     }
     public function getId()
     {
