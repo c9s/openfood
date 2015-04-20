@@ -8,6 +8,6 @@ class IngredientSchema extends SchemaDeclare
 
         $this->column('name')->varchar(30);
 
-
+        $this->many('foods', 'OpenFood\\Model\\FoodSchema', 'ingredient_id', 'id');
     }
 }

@@ -15,5 +15,7 @@ class FoodSchema extends SchemaDeclare
         $this->column('created_at')->datetime();
 
         $this->belongsTo('company', 'OpenFood\\Model\\CompanySchema', 'id', 'company_id');
+
+        $this->many('ingredients', 'OpenFood\\Model\\IngredientSchema', 'food_id', 'id');
     }
 }
