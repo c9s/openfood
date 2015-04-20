@@ -1,3 +1,10 @@
+Proprosal
+===============
+
+The OpenFood Project
+https://g0v.hackpad.com/OpenFood-project-jArtZeaeUeL
+
+
 Setup
 ===============
 
