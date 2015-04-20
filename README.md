@@ -32,6 +32,10 @@ Create database:
 
     php bin/lazy create-db
 
+Build up database from schema:
+
+    php bin/lazy sql --rebuild
+
 Initialize asset files:
 
     php bin/phifty asset --link
