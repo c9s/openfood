@@ -48,3 +48,19 @@ Run the command below to ensure everything works fine:
 
     php main.php
 
+
+Sync Instructions
+=================
+
+    git pull origin master
+    php bin/lazy schema build -f
+    php bin/lazy diff
+    php bin/lazy migrate auto
+
+
+
+
+
+
+
+
