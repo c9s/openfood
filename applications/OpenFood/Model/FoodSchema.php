@@ -4,6 +4,16 @@ use LazyRecord\Schema\SchemaDeclare;
 
 class FoodSchema extends SchemaDeclare
 {
-    function schema() {
+    public function schema() {
+
+        $this->column('name')->varchar(60);
+
+        $this->column('company_id')->integer()->unsigned();
+
+        $this->column('updated_at')->datetime();
+
+        $this->column('created_at')->datetime();
+
+        $this->belongsTo('company', 'OpenFood\\Model\\Company', 'id', 'company_id');
     }
 }
